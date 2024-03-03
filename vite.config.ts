@@ -22,16 +22,16 @@ export default defineConfig({
       }
     ]),
     // cdn 提取
-    // CDN({
-    //   prodUrl: 'https://registry.npmmirror.com/{name}/{version}/files/{path}',
-    //   modules: [
-    //     {
-    //       name: 'oh-my-live2d',
-    //       var: 'OML2D',
-    //       path: 'dist/index.min.js'
-    //     }
-    //   ]
-    // })
+    CDN({
+      prodUrl: 'https://registry.npmmirror.com/{name}/{version}/files/{path}',
+      modules: [
+        {
+          name: 'oh-my-live2d',
+          var: 'OML2D',
+          path: 'dist/index.min.js'
+        }
+      ]
+    })
   ],
   build: {
     chunkSizeWarningLimit: 1000

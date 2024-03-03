@@ -16,7 +16,7 @@ loadOml2d({
       }
     }
   ],
-//   importType: 'cubism2',
+  importType: 'cubism2',
   libraryUrls: {
     cubism2: import.meta.env.DEV
       ? (await import('live2dcubismcore/live2d.min.js?url')).default
